@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JUGAR.unity
     guid: cb6c6b75359a5b14b831a3ca18242c56
+  - enabled: 1
+    path: Assets/Scenes/AJUSTES.unity
+    guid: 77162f0d803a73f4dbe4e6616f5b18f1
   m_configObjects: {}
