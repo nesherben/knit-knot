@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-    public float velocidad = 3.0f;
-    private GameObject cilindro;
+    public float velocidad = 2.0f;
+    public GameObject obj;
 
     void Start() {
 
@@ -13,6 +13,7 @@ public class Rotation : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(Vector3.up, velocidad * Time.deltaTime);
+       obj.transform.Rotate(Vector3.up, velocidad * Time.deltaTime);
     }
+
 }
