@@ -901,6 +901,7 @@ GameObject:
   - component: {fileID: 1050194948}
   - component: {fileID: 1050194947}
   - component: {fileID: 1050194946}
+  - component: {fileID: 1050194949}
   m_Layer: 5
   m_Name: superior
   m_TagString: Untagged
@@ -1006,6 +1007,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050194944}
   m_CullTransparentMesh: 0
+--- !u!114 &1050194949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050194944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5cbeeffec293f245ba0680a54e61732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: SUPERIOR
 --- !u!1 &1253621265
 GameObject:
   m_ObjectHideFlags: 0
