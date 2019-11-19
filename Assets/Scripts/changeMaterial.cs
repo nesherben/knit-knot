@@ -6,13 +6,15 @@ using UnityEngine.EventSystems;
 public class changeMaterial : MonoBehaviour
 {
     //Set these Textures in the Inspector
-    public Texture m_MainTexture, m_Normal, m_Metal, m_emision;
-    Renderer m_Renterer;
+    public Texture2D m_MainTexture, m_Normal, m_Metal, m_emision;
+    Renderer m_Renterer,c_Renderer;
+    //public GameObject combo;
     public GameObject objeto;
     
 
     void Start() {
         //Fetch the Renderer from the GameObject
+        //c_Renderer = combo.GetComponent<SpriteRenderer>();
         m_Renterer = objeto.GetComponent<MeshRenderer>();
 
         //Make sure to enable the Keywords
@@ -23,7 +25,7 @@ public class changeMaterial : MonoBehaviour
     // Use this for initialization
     public void setTexture()
     {
-        
+       // m_Renterer.material = c_Renderer.material;
         m_Renterer.material.EnableKeyword("_NORMALMAP");
         m_Renterer.material.EnableKeyword("_METALLICGLOSSMAP");
         m_Renterer.material.EnableKeyword("_EMISSION");

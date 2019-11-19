@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SUPERIOR.unity
     guid: b03a3ef4c0579f84e946f93ca02238fe
+  - enabled: 1
+    path: "Assets/Scenes/DISE\xD1AR.unity"
+    guid: 62049dfc1266fc3468f4ca36a5689694
   m_configObjects: {}
