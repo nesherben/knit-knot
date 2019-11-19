@@ -5,7 +5,7 @@ using UnityEngine;
 public class starRotation : MonoBehaviour
 {
     public float velocidad = 35.0f;
-	private GameObject estrellita;
+	//private GameObject estrellita;
 
     void Start() {
 

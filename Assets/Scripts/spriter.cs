@@ -8,40 +8,46 @@ public class spriter : MonoBehaviour
     SpriteRenderer rend;
     Texture2D tex;
     public GameObject objeto;
-    static int capas = 2;
+    private static int capas = 2;
     public Texture2D texBase, texPatron;
     public Color texColor;
     Renderer m_Renterer;
     public Texture2D[] textureArray = new Texture2D[capas];
     public Color[] colorArray = new Color[capas];
-   
-    
+
+
     // Start is called before the first frame update
     public void Start()
     {
         rend = GetComponent<SpriteRenderer>();
         m_Renterer = objeto.GetComponent<MeshRenderer>();
         //hacer textura
-        
-            textureArray[0] = texBase;
-        
-            textureArray[1] = texPatron;
-        
-            colorArray[1] = texColor;
-            
+
+        for (int i = 0; i < capas; i++) {
+
+            textureArray[i] = Texture2D.whiteTexture;
+            colorArray[i] = new Color(0, 0, 0, 0);
+
+        }
+
+    }
+    public void Update()
+    {
         tex = MakeTexture(textureArray, colorArray);
         //hacer sprite
 
         rend.sprite = MakeSprite(tex);
-
-
-    }
-    public void trigger() {
-
         setTexture(tex);
     }
-    
-    public Texture2D MakeTexture(Texture2D[] layers, Color[] layerColors) {
+
+    public void trigger()
+    {
+        setTexture(tex);
+        Update();
+    }
+
+    public Texture2D MakeTexture(Texture2D[] layers, Color[] layerColors)
+    {
 
 
         //crear textura
@@ -69,7 +75,8 @@ public class spriter : MonoBehaviour
 
                     //aplicar color a la capa
 
-                    if (srcPixel.r != 0 && srcPixel.a != 0 && i < layerColors.Length) {
+                    if (srcPixel.r != 0 && srcPixel.a != 0 && i < layerColors.Length)
+                    {
                         srcPixel = applyColorToPixel(srcPixel, layerColors[i]);
                     }
 
@@ -79,7 +86,8 @@ public class spriter : MonoBehaviour
                     {
                         colorArray[pixelIndex] = srcPixel;
                     }
-                    else if (srcPixel.a > 0) {
+                    else if (srcPixel.a > 0)
+                    {
                         colorArray[pixelIndex] = NormalBlend(colorArray[pixelIndex], srcPixel);
                     }
                 }
@@ -95,15 +103,17 @@ public class spriter : MonoBehaviour
         return newTexture;
     }
 
-    public Sprite MakeSprite(Texture2D texture) {
+    public Sprite MakeSprite(Texture2D texture)
+    {
         return Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f);
 
     }
 
-    Color NormalBlend(Color dest, Color src) {
+    Color NormalBlend(Color dest, Color src)
+    {
 
         float srcAlpha = src.a;
-        float destAlpha = (1 - src.a)*dest.a;
+        float destAlpha = (1 - src.a) * dest.a;
         Color destLayer = dest * destAlpha;
         Color srcLayer = src * srcAlpha;
 
@@ -111,7 +121,8 @@ public class spriter : MonoBehaviour
 
 
     }
-    Color applyColorToPixel(Color pixel, Color applyColor) {
+    Color applyColorToPixel(Color pixel, Color applyColor)
+    {
 
         if (pixel.r == 1f && applyColor.a > 0)
         {
