@@ -13,7 +13,10 @@ public class Rotation : MonoBehaviour
 
     void Update()
     {
-       obj.transform.Rotate(Vector3.up, velocidad * Time.deltaTime);
+        if (!ahorrobateria.ahorro)
+        {
+            obj.transform.Rotate(Vector3.up, velocidad * Time.deltaTime);
+        }
     }
 
 }

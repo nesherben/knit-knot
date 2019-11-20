@@ -13,6 +13,9 @@ public class starRotation : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(Vector3.forward, velocidad * Time.deltaTime);
+        if (!ahorrobateria.ahorro)
+        {
+            transform.Rotate(Vector3.forward, velocidad * Time.deltaTime);
+        }
     }
 }
