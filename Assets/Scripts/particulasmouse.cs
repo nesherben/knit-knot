@@ -1,18 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class particulasmouse : MonoBehaviour
 {
     public GameObject particula;
+    new AudioSource audio;
     ParticleSystem aparece;
     Transform posicion;
     Vector3 mousePosition;
-
     private void Start()
     {
         posicion = particula.GetComponent<Transform>();
         aparece = particula.GetComponent<ParticleSystem>();
+        audio = particula.GetComponent<AudioSource>();
         
     }
     
@@ -29,7 +31,16 @@ public class particulasmouse : MonoBehaviour
         posicion.position = mousePosition;
         if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) && !ahorrobateria.ahorro)
         {
+
             aparece.Play();
         }
+        if ((Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))){
+            
+
+            audio.Play();
+            
+
+        }
+
     }
 }

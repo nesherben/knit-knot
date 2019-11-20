@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ahorrobateria.cs" />
     <Compile Include="Assets\Scripts\audioControl.cs" />
+    <Compile Include="Assets\Scripts\bienvenidoload.cs" />
     <Compile Include="Assets\Scripts\changeMaterial.cs" />
     <Compile Include="Assets\Scripts\particulasmouse.cs" />
     <Compile Include="Assets\Scripts\persistencia.cs" />
