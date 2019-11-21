@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fondo
   - persistencia
+  - limite
   layers:
   - Default
   - TransparentFX
