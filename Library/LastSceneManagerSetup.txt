@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/MENU.unity
+=======
+- path: Assets/Scenes/BIENVENIDA.unity
+>>>>>>> 498458fe29e9dad9cacc03b693bd61ed3f16efc6
   isLoaded: 1
   isActive: 1
   isSubScene: 0
