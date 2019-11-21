@@ -233,14 +233,9 @@ GameObject:
   - component: {fileID: 632052966}
   - component: {fileID: 632052968}
   - component: {fileID: 632052967}
-<<<<<<< HEAD
   - component: {fileID: 632052970}
   - component: {fileID: 632052969}
   m_Layer: 5
-=======
-  - component: {fileID: 632052969}
-  m_Layer: 0
->>>>>>> 8566f636bb3b826ca5b148af56dc596be70ec518
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +306,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 632052965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -340,8 +334,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 632052965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-=======
->>>>>>> 8566f636bb3b826ca5b148af56dc596be70ec518
   m_Script: {fileID: 11500000, guid: a5cbeeffec293f245ba0680a54e61732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
