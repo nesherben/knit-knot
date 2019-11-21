@@ -326,15 +326,15 @@ RectTransform:
   m_GameObject: {fileID: 895411819}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.120659, y: 2.120659, z: 2.120659}
+  m_LocalScale: {x: 2.1919131, y: 2.1919131, z: 2.1919131}
   m_Children: []
   m_Father: {fileID: 208018910}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.23534784, y: 0.905556}
-  m_AnchorMax: {x: 0.9606956, y: 0.97400004}
-  m_AnchoredPosition: {x: 0.5, y: 0}
-  m_SizeDelta: {x: -88.58, y: 7}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 23, y: 182}
+  m_SizeDelta: {x: 78.42, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895411821
 MonoBehaviour:
@@ -545,7 +545,7 @@ RectTransform:
   m_GameObject: {fileID: 1125204936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6450988, y: 0.6450988, z: 0.6450988}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1340146796}
   m_RootOrder: 0
@@ -693,16 +693,16 @@ RectTransform:
   m_GameObject: {fileID: 1340146795}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3806744, y: 1.3806744, z: 1.3806744}
+  m_LocalScale: {x: 0.9625, y: 1, z: 1}
   m_Children:
   - {fileID: 1125204937}
   m_Father: {fileID: 208018910}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.052652176, y: 0.89822394}
-  m_AnchorMax: {x: 0.19600001, y: 0.9813321}
-  m_AnchoredPosition: {x: -0.5, y: 0}
-  m_SizeDelta: {x: -9.729996, y: -9.354996}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -85.90002, y: 182}
+  m_SizeDelta: {x: 35.3, y: 35.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1340146797
 MonoBehaviour:
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 971185ad2c87060448fa704ee6f70972, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cb52bf47af37e44189751a26ab40e5e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
