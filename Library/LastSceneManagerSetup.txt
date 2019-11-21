@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: "Assets/Scenes/DISE\xD1AR.unity"
+=======
+- path: Assets/Scenes/MINIJUEGO.unity
+>>>>>>> d38e496cf995d57d4c460744cbe8495d03bff5dd
   isLoaded: 1
   isActive: 1
   isSubScene: 0
