@@ -20,13 +20,8 @@ MonoBehaviour:
     height: 997
   m_ShowMode: 4
   m_Title: 
-<<<<<<< HEAD
   m_RootView: {fileID: 10}
   m_MinSize: {x: 950, y: 666}
-=======
-  m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 544}
->>>>>>> dd8b71d43f6a73342e61caac784f2b73e3032179
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
