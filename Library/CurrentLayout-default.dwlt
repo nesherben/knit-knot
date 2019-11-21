@@ -151,32 +151,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 1368
-=======
-<<<<<<< HEAD
-    width: 1531
->>>>>>> c76bc90027d9b4467ac7d9b923eef4deb729a81c
     height: 947
   m_MinSize: {x: 432, y: 494}
   m_MaxSize: {x: 14002, y: 14044}
   vertical: 1
-<<<<<<< HEAD
   controlID: 2770
-=======
-  controlID: 24334
-=======
-    width: 398
-    height: 426
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 0
->>>>>>> a97bd2dc626beb3edca556ee4915e5481668d6fc
->>>>>>> c76bc90027d9b4467ac7d9b923eef4deb729a81c
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
