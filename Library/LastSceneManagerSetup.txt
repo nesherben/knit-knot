@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/BIENVENIDA.unity
+- path: Assets/Scenes/TUTORIAL PATRONAJE.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
