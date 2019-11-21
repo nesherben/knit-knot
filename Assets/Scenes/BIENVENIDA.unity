@@ -233,6 +233,8 @@ GameObject:
   - component: {fileID: 632052966}
   - component: {fileID: 632052968}
   - component: {fileID: 632052967}
+  - component: {fileID: 632052970}
+  - component: {fileID: 632052969}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -295,6 +297,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632052965}
   m_CullTransparentMesh: 0
+--- !u!114 &632052969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632052965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1723036014}
+          m_MethodName: loadScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: MENU
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &632052970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632052965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5cbeeffec293f245ba0680a54e61732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: MENU
 --- !u!1 &780333946
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd4815f05ed33be4aae9a50189d1567b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 0}
   mixer: {fileID: 24100000, guid: ba9b0c8dfa59389449b1cbd7cc1d5a72, type: 2}
 --- !u!114 &780333948
 MonoBehaviour:
@@ -461,6 +505,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1132802111}
   - component: {fileID: 1132802112}
+  - component: {fileID: 1132802114}
+  - component: {fileID: 1132802113}
   m_Layer: 0
   m_Name: Logo Knit Knot
   m_TagString: Untagged
@@ -536,6 +582,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1132802113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132802110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1723036014}
+          m_MethodName: loadScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: MENU
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1132802114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132802110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5cbeeffec293f245ba0680a54e61732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: MENU
 --- !u!1 &1459673133
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +634,8 @@ GameObject:
   - component: {fileID: 1459673134}
   - component: {fileID: 1459673135}
   - component: {fileID: 1459673136}
+  - component: {fileID: 1459673138}
+  - component: {fileID: 1459673137}
   m_Layer: 0
   m_Name: "\xA1Toca la pantalla!"
   m_TagString: Untagged
@@ -570,7 +659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 55.2}
+  m_AnchoredPosition: {x: 0, y: 55.19998}
   m_SizeDelta: {x: -225.95999, y: 1.4799957}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1459673135
@@ -636,6 +725,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logo: {fileID: 1459673133}
   multiplier: 0
+--- !u!114 &1459673137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459673133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1723036014}
+          m_MethodName: loadScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: MENU
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1459673138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459673133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5cbeeffec293f245ba0680a54e61732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: MENU
 --- !u!1 &1586164531
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +780,7 @@ GameObject:
   - component: {fileID: 1586164532}
   - component: {fileID: 1586164536}
   - component: {fileID: 1586164537}
+  - component: {fileID: 1586164538}
   m_Layer: 0
   m_Name: particulas
   m_TagString: persistencia
@@ -5399,7 +5530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586164531}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 34, z: -213}
+  m_LocalPosition: {x: 2163, y: 10506, z: -65817}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5515,6 +5646,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1818360608 &1586164538
+PositionConstraint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586164531}
+  m_Enabled: 0
+  m_Weight: 1
+  m_TranslationAtRest: {x: 7, y: 34, z: -213}
+  m_TranslationOffset: {x: 7, y: 34, z: -213}
+  m_AffectTranslationX: 1
+  m_AffectTranslationY: 1
+  m_AffectTranslationZ: 1
+  m_IsContraintActive: 1
+  m_IsLocked: 1
+  m_Sources:
+  - sourceTransform: {fileID: 1586164535}
+    weight: 1
 --- !u!1 &1691028640
 GameObject:
   m_ObjectHideFlags: 0

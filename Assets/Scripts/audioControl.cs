@@ -13,7 +13,7 @@ public class audioControl : MonoBehaviour
         mixer.SetFloat("musicVol",Mathf.Log10(sliderValue)*20);
         saveValue = sliderValue;
     }
-    private void Start()
+    private void Awake()
     {
         slider.value = saveValue;
     }
