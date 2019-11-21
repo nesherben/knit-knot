@@ -143,11 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 494}
   m_MaxSize: {x: 14006, y: 14044}
   vertical: 1
-<<<<<<< HEAD
   controlID: 37796
-=======
-  controlID: 10268
->>>>>>> 3dce04f05f4c56c4502bff6c6f1a39e92c5b6d51
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
