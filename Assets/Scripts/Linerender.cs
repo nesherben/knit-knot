@@ -128,8 +128,5 @@ public class Linerender : MonoBehaviour
             (Mathf.Max(L2.StartPoint.y, L2.EndPoint.y) >= Mathf.Min(L1.StartPoint.y, L1.EndPoint.y))
                );
     }
-    public void OnTriggerEnter(Collider other) {
-
-        Debug.Log("ssssssssss");
-    }
+    
 }

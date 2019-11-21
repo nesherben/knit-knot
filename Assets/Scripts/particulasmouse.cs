@@ -17,7 +17,7 @@ public class particulasmouse : MonoBehaviour
         aparece = particula.GetComponent<ParticleSystem>();
         audio = particula.GetComponent<AudioSource>();
 
-        
+
     }
     
     // Start is called before the first frame update
@@ -25,6 +25,7 @@ public class particulasmouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         mousePosition = Input.mousePosition;
         mousePosition.z = 10;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
