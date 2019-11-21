@@ -15,6 +15,6 @@ public class audioControl : MonoBehaviour
     }
     private void Start()
     {
-        //slider.value = saveValue;
+        slider.value = saveValue;
     }
 }
