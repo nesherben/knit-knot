@@ -233,7 +233,8 @@ GameObject:
   - component: {fileID: 632052966}
   - component: {fileID: 632052968}
   - component: {fileID: 632052967}
-  m_Layer: 5
+  - component: {fileID: 632052969}
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,6 +296,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 632052965}
   m_CullTransparentMesh: 0
+--- !u!114 &632052969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632052965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5cbeeffec293f245ba0680a54e61732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: MENU
 --- !u!1 &780333946
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd4815f05ed33be4aae9a50189d1567b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 0}
   mixer: {fileID: 24100000, guid: ba9b0c8dfa59389449b1cbd7cc1d5a72, type: 2}
 --- !u!114 &780333948
 MonoBehaviour:
@@ -570,7 +585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 55.2}
+  m_AnchoredPosition: {x: 0, y: 55.19998}
   m_SizeDelta: {x: -225.95999, y: 1.4799957}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1459673135
