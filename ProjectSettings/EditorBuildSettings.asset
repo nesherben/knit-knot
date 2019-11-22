@@ -9,37 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/BIENVENIDA.unity
     guid: 276e9836d6318e3468842c9a21be06e7
   - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Scenes/MENU.unity
-    guid: 1c82de587a8c9af43b9eab816e47382b
-  - enabled: 1
-=======
->>>>>>> dd8b71d43f6a73342e61caac784f2b73e3032179
-    path: Assets/Scenes/JUGAR.unity
-    guid: cb6c6b75359a5b14b831a3ca18242c56
-  - enabled: 1
     path: Assets/Scenes/AJUSTES.unity
     guid: 77162f0d803a73f4dbe4e6616f5b18f1
   - enabled: 1
-<<<<<<< HEAD
-    path: Assets/Scenes/SUPERIOR.unity
-    guid: b03a3ef4c0579f84e946f93ca02238fe
-  - enabled: 1
     path: "Assets/Scenes/DISE\xD1AR.unity"
     guid: 62049dfc1266fc3468f4ca36a5689694
-=======
+  - enabled: 1
+    path: Assets/Scenes/JUGAR.unity
+    guid: cb6c6b75359a5b14b831a3ca18242c56
+  - enabled: 1
     path: Assets/Scenes/MENU.unity
     guid: 1c82de587a8c9af43b9eab816e47382b
->>>>>>> dd8b71d43f6a73342e61caac784f2b73e3032179
+  - enabled: 1
+    path: Assets/Scenes/SUPERIOR.unity
+    guid: b03a3ef4c0579f84e946f93ca02238fe
   - enabled: 1
     path: Assets/Scenes/TUTORIAL PATRONAJE.unity
     guid: cc90160c69c354648b7462d3d9632a04
   - enabled: 1
-<<<<<<< HEAD
     path: Assets/Scenes/MINIJUEGO.unity
     guid: 8b15a10031de7c84cb8038d5b65c9392
-=======
-    path: Assets/Scenes/SUPERIOR.unity
-    guid: b03a3ef4c0579f84e946f93ca02238fe
->>>>>>> dd8b71d43f6a73342e61caac784f2b73e3032179
   m_configObjects: {}

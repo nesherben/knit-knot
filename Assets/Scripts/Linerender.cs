@@ -60,6 +60,8 @@ public class Linerender : MonoBehaviour
             mousePos.z = -220;
             if (!pointsList.Contains(mousePos))
             {
+                //ToleranceCalculation
+                
                 pointsList.Add(mousePos);
                 line.positionCount = pointsList.Count;
                 line.SetPosition(pointsList.Count - 1, (Vector3)pointsList[pointsList.Count - 1]);
@@ -88,6 +90,7 @@ public class Linerender : MonoBehaviour
                 lines[i].StartPoint = (Vector3)pointsList[i];
                 lines[i].EndPoint = (Vector3)pointsList[i + 1];
             }
+            
         }
         for (int i = 0; i < TotalLines - 1; i++)
         {

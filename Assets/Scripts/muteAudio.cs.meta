@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3adace35841c58e488ff3429fe084a17
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - boton: {instanceID: 0}
+  - activo: {fileID: 21300000, guid: 402d887ac98500b4e9edd063b727e671, type: 3}
+  - inactivo: {fileID: 21300000, guid: 259546cc526929847a66ee0280bb8357, type: 3}
+  - miaudio: {fileID: 24100000, guid: ba9b0c8dfa59389449b1cbd7cc1d5a72, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

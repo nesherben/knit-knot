@@ -350,6 +350,7 @@ GameObject:
   - component: {fileID: 780333949}
   - component: {fileID: 780333948}
   - component: {fileID: 780333947}
+  - component: {fileID: 780333951}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: persistencia
@@ -495,6 +496,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &780333951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780333946}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adace35841c58e488ff3429fe084a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miaudio: {fileID: 24100000, guid: ba9b0c8dfa59389449b1cbd7cc1d5a72, type: 2}
 --- !u!1 &1132802110
 GameObject:
   m_ObjectHideFlags: 0
@@ -5876,6 +5890,7 @@ GameObject:
   - component: {fileID: 1732399568}
   - component: {fileID: 1732399567}
   - component: {fileID: 1732399570}
+  - component: {fileID: 1732399571}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: persistencia
@@ -5948,6 +5963,19 @@ MonoBehaviour:
   - {fileID: 1732399566}
   - {fileID: 1788046475}
   - {fileID: 1586164531}
+--- !u!114 &1732399571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732399566}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adace35841c58e488ff3429fe084a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miaudio: {fileID: 24100000, guid: ba9b0c8dfa59389449b1cbd7cc1d5a72, type: 2}
 --- !u!1 &1788046475
 GameObject:
   m_ObjectHideFlags: 0

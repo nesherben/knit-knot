@@ -9,13 +9,14 @@ public class changeMaterial : MonoBehaviour
     public Texture2D m_MainTexture, m_Normal, m_Metal, m_emision;
     Renderer m_Renterer,c_Renderer;
     //public GameObject combo;
-    public GameObject objeto;
+    public GameObject objeto1;
     
 
     void Start() {
         //Fetch the Renderer from the GameObject
         //c_Renderer = combo.GetComponent<SpriteRenderer>();
-        m_Renterer = objeto.GetComponent<MeshRenderer>();
+        
+        m_Renterer = objeto1.GetComponent<MeshRenderer>();
 
         //Make sure to enable the Keywords
    
