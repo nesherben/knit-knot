@@ -24,9 +24,9 @@ public class muteAudio : MonoBehaviour
     public void muteado() {
         
         saved = volumen;
-        if (!muted || volumen == 0)
+        if (!muted || volumen <= 0)
         {
-            miaudio.SetFloat("musicVol", Mathf.Log10(0) * 20);
+            miaudio.SetFloat("musicVol", Mathf.Log10(-1) * 20);
             muted = true;
             audioControl.saveValue = -1;
             cambio.image.sprite = activo;

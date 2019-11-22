@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 382
     width: 667
     height: 191
-  m_MinSize: {x: 102, y: 122}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 344}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 13875
+  controlID: 34
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 272}
   m_MaxSize: {x: 14006, y: 10022}
   vertical: 0
-  controlID: 175
+  controlID: 159
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 616}
   m_MaxSize: {x: 18008, y: 18066}
   vertical: 0
-  controlID: 173
+  controlID: 179
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,8 +195,8 @@ MonoBehaviour:
     y: 0
     width: 667
     height: 382
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_MinSize: {x: 436, y: 616}
   m_MaxSize: {x: 14006, y: 18066}
   vertical: 1
-  controlID: 174
+  controlID: 92
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 344}
   m_MaxSize: {x: 8006, y: 8044}
   vertical: 0
-  controlID: 54
+  controlID: 93
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -365,8 +365,8 @@ MonoBehaviour:
     y: 0
     width: 864
     height: 573
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -401,23 +401,23 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_MixersTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e2310000
+    m_SelectedIDs: 
     m_LastClickedID: 12770
     m_ExpandedIDs: 12eb343c
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: globalaudiomixer
-      m_OriginalName: globalaudiomixer
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 12770
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -567,9 +567,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 04310000
-    m_LastClickedID: 12548
-    m_ExpandedIDs: 00000000642d0000a82e000000ca9a3b
+    m_SelectedIDs: 06310000
+    m_LastClickedID: 12550
+    m_ExpandedIDs: 00000000622d0000aa2e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,7 +597,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000642d0000a82e0000
+    m_ExpandedIDs: 00000000622d0000aa2e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -722,7 +722,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 727efeffa67efeff3c7ffeff447ffeff4e7ffeff587ffeff607ffeff707ffeff7e7ffeff867ffeff8c80feffc280feffc480feffc880feffcc80feffd080feffd480feffd880feffdc80feffe080feff6a81feff9e81feff3482feff3c82feff4682feff5082feff5882feff6882feff7682feff7e82feff828cfeff4491feff8c92feffa493feff2095fefffc96feff9297feffc097feffee97feffbaaafeff7cb5fefff6b5feff66b6feffdcb6feff52b7feffc8b7feff3cb8feff00bafeff32bafeff76bbfeff0ebcfeff9cbcfeff46bdfeffaebdfeff42befeffc2befefff6befeff20c0feff60c4feffb8c7feffe0c8feff38c9feff1accfeffcecefeff8acffeff5ad0feff22d1feffdcd1feff7ad3feffa8d3feffd8d3feffeed9feff26dafeffbcdafeffc4dafeffcedafeffd8dafeffe0dafefff0dafefffedafeff06dbfeff84dcfeffbcdcfeff4eddfeff52ddfeff58ddfeff5eddfeff62ddfeff6eddfeff78ddfeff7cddfeff62f6feff3cf7feff70f7feff02f8feff06f8feff0cf8feff10f8feff14f8feff20f8feff28f8feff38f8feff24f9feff5cf9feffeef9fefff2f9fefff8f9fefffcf9feff00fafeff0cfafeff14fafeff24fafeff20fbfeff54fbfeffe6fbfeffeafbfefff0fbfefff4fbfefff8fbfeff04fcfeff0cfcfeff1cfcfeff0afdfeff42fdfeffd8fdfeffe0fdfeffeafdfefff2fdfefffafdfeff0afefeff16fefeff2afefeff9807ffff9008ffffc408ffff5609ffff5a09ffff6009ffff6609ffff6a09ffff7609ffff8009ffff8409ffff700affffa40affff360bffff3a0bffff400bffff460bffff4a0bffff560bffff600bffff640bffff520cffff860cffff180dffff1c0dffff220dffff280dffff2c0dffff380dffff420dffff460dffff500effff880effff1e0fffff260fffff300fffff3a0fffff420fffff520fffff600fffff680fffff6810ffff9c10ffff2e11ffff3211ffff3811ffff3e11ffff4211ffff4e11ffff5811ffff5c11ffff5412ffff8a12ffff2013ffff2813ffff3213ffff3c13ffff4413ffff5413ffff6213ffff6a13ffffcc15ffffbc16fffff416fffff616fffffa16fffffe16ffff0217ffff0617ffff0a17ffff0e17ffff1217ffffae17ffff3618ffff5619fffff619ffff8e1affff6c1bffff9a1bffff241cffff5a1cffffea1cfffff21cfffffc1cffff061dffff0e1dffff1e1dffff2a1dffff3e1dffff5022ffff4244fffff249ffff884afffffc4affffdc4bffffa04cffff1a4dffff9c4dffff1a4effff4c4effffea4effff1c4ffffff24fffff4051ffff9051ffff0c52ffffc056ffff525affff6c5cffffb25cffff4a5dffff965effffc85effffa45fffff6c60ffff2c61ffff0c62ffffc262fffff462ffff2663ffff9863ffff8473ffff6a78ffffc67bffff6c7cffff5a7effffd87effff6c81ffffe482fffffa87ffff2e88ffffa68bffff988cffff1a8effff0696ffff329cffffb09cffffe89cffffea9cffffee9cfffff29cfffff69cfffffa9cfffffe9cffff029dffff069dfffff49effff6a9fffff9c9fffff08a0ffff42a0ffffd2a0ffffd6a0ffffdaa0ffffe0a0ffffe4a0ffffeea0fffff6a0ffff02a1ffff70a1ffffaaa1ffffe4a1ffff20a2ffff5ca2ffff96a2ffffd0a2ffff0aa3ffff84cfffffb2d0ffff1ad1ffff2aecffff94ecffffc2ecfffff0ecffff1eedffff4cedffff7aedffffa8edffffd6edffff04eeffff32eeffff60eeffff8eeeffffbceeffffeaeeffff18efffff46efffff74efffffa2efffffd0effffffeefffff30f0ffff5af2ffff88f2ffffb6f2ffffe4f2ffff70f3ffff9ef3ffffcef3ffffdcf4ffff86f9ffffb0f9ffffdaf9ffff04faffff2efaffff5cfbfffff4ffffff88360000f0370000fa3a0000ec3d0000de510000e8510000265b0000c05b0000585c000020720000c6720000ba7a00003a7c0000d4810000e2890000928d0000ac9c0000d8af0000e2b20000b8bd00003cbe000002e600008ee900007cec000048ee0000d6ee000002f1000060f200009af3000018f50000c20401002c0601006a0a01007437010032650100ac650100b66601004a6701007e6901004c6b0100dc6b0100706c01007a6d01000e6e0100186f0100b46f010056700100c0760100f4760100107701001e77010028770100be770100528701003a9c0100729e0100c89f01000ea10100a8a2010088a4010054ac0100a4e8010040e901006e0802007e320200b63402000c36020052370200ec380200cc3a020002480200b84802008a4c020054530200d461020074640200b066020008680200a6680200446a0200286c0200e8770200ac7a0200867b0200de7c0200287e0200c67f0200aa810200aa820200ecba020014fc0200ac080300220e0300c010030086160300
+      m_ExpandedIDs: 8eebffffc8ebffff5eecffff66ecffff70ecffff7aecffff82ecffff92ecffffa0ecffffa8ecffff8aefffffb8f0ffffd0f1ffffdaf2ffffa0f3ffff9cf4ffff20f6ffff52f6ffff84f6ffffb6f6ffffe8f6ffff1af7ffff4cf7ffff80f7ffffb2f7ffffe4f7ffff16f8ffff48f8ffff7af8ffffaef8ffffe0f8ffff12f9ffff46f9ffff78f9ffff32faffff3efbffff34360000464400008a46000090480000dc4900007c4b0000624d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -838,7 +838,7 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.14956416, y: 0.352434, z: -0.057168517, w: -0.9220388}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -875,15 +875,15 @@ MonoBehaviour:
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000012000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 0000000000000000000000000d000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -78
-    m_HBaseRangeMax: 78
+    m_HBaseRangeMin: -95
+    m_HBaseRangeMax: 95
     m_VBaseRangeMin: -169
     m_VBaseRangeMax: 169
     m_HAllowExceedBaseRangeMin: 1

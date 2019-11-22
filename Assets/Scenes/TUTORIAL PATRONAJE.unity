@@ -1010,6 +1010,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adace35841c58e488ff3429fe084a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boton: {fileID: 1327602202}
+  activo: {fileID: 21300000, guid: 402d887ac98500b4e9edd063b727e671, type: 3}
+  inactivo: {fileID: 21300000, guid: 259546cc526929847a66ee0280bb8357, type: 3}
   miaudio: {fileID: 24100000, guid: ba9b0c8dfa59389449b1cbd7cc1d5a72, type: 2}
 --- !u!114 &1327602205
 MonoBehaviour:
@@ -1090,8 +1093,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1327602208}
-        m_MethodName: mutear
+      - m_Target: {fileID: 1327602204}
+        m_MethodName: muteado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
