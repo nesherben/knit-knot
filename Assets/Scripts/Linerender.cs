@@ -77,7 +77,7 @@ public class Linerender : MonoBehaviour
     //    -----------------------------------    
     //  Following method checks is currentLine(line drawn by last two points) collided with line 
     //    -----------------------------------    
-    private bool isLineCollide()
+    bool isLineCollide()
     {
         if (pointsList.Count < 2)
             return false;

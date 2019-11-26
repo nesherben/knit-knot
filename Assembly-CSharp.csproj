@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\muteAudio.cs" />
     <Compile Include="Assets\Scripts\particulasmouse.cs" />
     <Compile Include="Assets\Scripts\persistencia.cs" />
+    <Compile Include="Assets\Scripts\PuntosControl.cs" />
     <Compile Include="Assets\Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\scenemanager.cs" />
     <Compile Include="Assets\Scripts\spriter.cs" />

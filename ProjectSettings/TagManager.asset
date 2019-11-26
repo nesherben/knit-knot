@@ -7,6 +7,7 @@ TagManager:
   - Fondo
   - persistencia
   - limite
+  - control
   layers:
   - Default
   - TransparentFX
