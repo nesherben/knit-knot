@@ -5,7 +5,6 @@ ScriptsOnlyBuild:
     - Linerender
     - Rotation
     - ahorrobateria
-    - audioControl
     - bienvenidoload
     - changeMaterial
     - changeRopa
@@ -57,6 +56,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9732}
     - Class: 114
       Script: {instanceID: 9888}
+    - Class: 114
+      Script: {instanceID: 9894}
+    - Class: 114
+      Script: {instanceID: 10250}
     - Class: 114
       Script: {instanceID: 10292}
     - Class: 114
@@ -111,7 +114,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9678}
     - Class: 114
-      Script: {instanceID: 9772}
+      Script: {instanceID: 9820}
     - Class: 114
       Script: {instanceID: 9888}
     - Class: 114
@@ -120,6 +123,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10292}
     - Class: 114
       Script: {instanceID: 10328}
+    - Class: 114
+      Script: {instanceID: 10670}
     - Class: 114
       Script: {instanceID: 11144}
     - Class: 114
@@ -137,7 +142,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 16204}
+      Script: {instanceID: 13298}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -198,8 +203,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10292}
     - Class: 114
-      Script: {instanceID: 10328}
-    - Class: 114
       Script: {instanceID: 10476}
     - Class: 114
       Script: {instanceID: 10670}
@@ -215,8 +218,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11556}
     - Class: 114
       Script: {instanceID: 11598}
-    - Class: 114
-      Script: {instanceID: 13554}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -230,12 +231,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/JUGAR.unity:
     - Class: 1
@@ -259,8 +254,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10292}
     - Class: 114
-      Script: {instanceID: 10328}
-    - Class: 114
       Script: {instanceID: 10670}
     - Class: 114
       Script: {instanceID: 11150}
@@ -268,8 +261,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11524}
     - Class: 114
       Script: {instanceID: 11598}
-    - Class: 114
-      Script: {instanceID: 13554}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -281,12 +272,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/MENU.unity:
     - Class: 1
@@ -310,8 +295,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10292}
     - Class: 114
-      Script: {instanceID: 10328}
-    - Class: 114
       Script: {instanceID: 10670}
     - Class: 114
       Script: {instanceID: 11150}
@@ -330,12 +313,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/MINIJUEGO.unity:
     - Class: 1
@@ -377,8 +354,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10292}
     - Class: 114
-      Script: {instanceID: 10328}
-    - Class: 114
       Script: {instanceID: 10542}
     - Class: 114
       Script: {instanceID: 10670}
@@ -388,8 +363,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11524}
     - Class: 114
       Script: {instanceID: 11598}
-    - Class: 114
-      Script: {instanceID: 13554}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -405,12 +378,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/SUPERIOR.unity:
     - Class: 1
@@ -446,8 +413,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10318}
     - Class: 114
-      Script: {instanceID: 10328}
-    - Class: 114
       Script: {instanceID: 10476}
     - Class: 114
       Script: {instanceID: 10670}
@@ -461,8 +426,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11556}
     - Class: 114
       Script: {instanceID: 11598}
-    - Class: 114
-      Script: {instanceID: 13554}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -476,12 +439,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/TUTORIAL PATRONAJE.unity:
     - Class: 1
@@ -509,8 +466,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10292}
     - Class: 114
-      Script: {instanceID: 10328}
-    - Class: 114
       Script: {instanceID: 10670}
     - Class: 114
       Script: {instanceID: 11150}
@@ -522,8 +477,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11524}
     - Class: 114
       Script: {instanceID: 11598}
-    - Class: 114
-      Script: {instanceID: 13554}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -537,12 +490,6 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -583,12 +530,6 @@ ScriptsOnlyBuild:
     className: starRotation
   - hash:
       serializedVersion: 2
-      Hash: a2dad819976c133b9f13febb234554b7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: audioControl
-  - hash:
-      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -599,6 +540,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: ddfb158ff9d1b2cfeb50152cdbe57def
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: pantallaCorrecta
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -763,7 +710,7 @@ ScriptsOnlyBuild:
     className: changeRopa
   - hash:
       serializedVersion: 2
-      Hash: 63c60e0be7df8530be44b2b00aaad11e
+      Hash: 4853ac92faee7967d176d68fa70297e4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: muteAudio
@@ -1055,12 +1002,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: scenemanager
-  - hash:
-      serializedVersion: 2
-      Hash: c2fda3ed2badee17b8afcf8f4b712464
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: pantallaCorrecta
   platform: 13
   scenePathNames:
   - Assets/Scenes/BIENVENIDA.unity

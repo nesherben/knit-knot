@@ -13,10 +13,9 @@ public class muteAudio : MonoBehaviour
     public AudioMixer miaudio;
     public bool muted = false;
     public float volumen,saved;
-
-
     
-    private void Start()
+    
+    public void Start()
     {
         saved = 1f;
         cambio = boton.GetComponent<Button>();
