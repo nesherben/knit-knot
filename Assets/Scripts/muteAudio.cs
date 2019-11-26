@@ -6,45 +6,49 @@ using UnityEngine.UI;
 
 public class muteAudio : MonoBehaviour
 {
-    public Button cambio;
+    public Image cambio;
     public Slider slider;
-    public GameObject boton;
+    public GameObject boton,sonido;
     public Sprite activo, inactivo;
-    public AudioMixer miaudio;
+    AudioSource miaudio;
     public bool muted = false;
     public float volumen,saved;
+
+
     
-    
-    public void Start()
+    private void Start()
     {
+
         saved = 1f;
-        cambio = boton.GetComponent<Button>();
-        miaudio.SetFloat("musicVol", Mathf.Log10(saved) * 20);
+        miaudio = sonido.GetComponent<AudioSource>();
+        cambio = boton.GetComponent<Image>();
+        miaudio.volume = saved;
+        
         
     }
 
     public void muteado() {
-        
+
         if (!muted)
         {
-            slider.value = -1;
-            miaudio.SetFloat("musicVol", Mathf.Log10(-1) * 20);
+            slider.value = 0;
+            miaudio.volume = slider.value;
             muted = true;
-            cambio.image.sprite = activo;
+            cambio.sprite = activo;
             
         }
         else
         {
-            slider.value = saved;
-            cambio.image.sprite = inactivo;
-            miaudio.SetFloat("musicVol", Mathf.Log10(slider.value) * 20);
+            cambio.sprite = inactivo;
+            miaudio.volume = saved;
             muted = false;
+            slider.value = miaudio.volume;
         }
 
     }
     public void setvolume()
     {
-        miaudio.SetFloat("musicVol", Mathf.Log10(slider.value) * 20);
+        miaudio.volume = slider.value;
         saved = slider.value;
     }
     

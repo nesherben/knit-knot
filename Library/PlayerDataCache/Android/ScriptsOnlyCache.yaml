@@ -24,7 +24,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -141,8 +140,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11560}
     - Class: 114
       Script: {instanceID: 11598}
-    - Class: 114
-      Script: {instanceID: 13298}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -203,6 +200,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10292}
     - Class: 114
+      Script: {instanceID: 10328}
+    - Class: 114
       Script: {instanceID: 10476}
     - Class: 114
       Script: {instanceID: 10670}
@@ -239,7 +238,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -253,6 +256,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9888}
     - Class: 114
       Script: {instanceID: 10292}
+    - Class: 114
+      Script: {instanceID: 10328}
     - Class: 114
       Script: {instanceID: 10670}
     - Class: 114
@@ -280,7 +285,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -294,6 +303,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10250}
     - Class: 114
       Script: {instanceID: 10292}
+    - Class: 114
+      Script: {instanceID: 10328}
     - Class: 114
       Script: {instanceID: 10670}
     - Class: 114
@@ -354,6 +365,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10292}
     - Class: 114
+      Script: {instanceID: 10328}
+    - Class: 114
       Script: {instanceID: 10542}
     - Class: 114
       Script: {instanceID: 10670}
@@ -413,6 +426,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10318}
     - Class: 114
+      Script: {instanceID: 10328}
+    - Class: 114
       Script: {instanceID: 10476}
     - Class: 114
       Script: {instanceID: 10670}
@@ -465,6 +480,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9888}
     - Class: 114
       Script: {instanceID: 10292}
+    - Class: 114
+      Script: {instanceID: 10328}
     - Class: 114
       Script: {instanceID: 10670}
     - Class: 114
@@ -710,7 +727,7 @@ ScriptsOnlyBuild:
     className: changeRopa
   - hash:
       serializedVersion: 2
-      Hash: 4853ac92faee7967d176d68fa70297e4
+      Hash: b5938fb8cbcd42627b65c956588d8b14
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: muteAudio
@@ -1012,4 +1029,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SUPERIOR.unity
   - Assets/Scenes/TUTORIAL PATRONAJE.unity
   - Assets/Scenes/MINIJUEGO.unity
-  playerPath: D:/Desktop/KnitKnot.apk
+  playerPath: C:/Unity_Proyects/tejecionamiento/KnitKnot.apk

@@ -11,7 +11,7 @@ public class persistencia : MonoBehaviour
     {
         objs = GameObject.FindGameObjectsWithTag("persistencia");
 
-        if (objs.Length > 6)//jaja es gracioso porque hay que cambiarlo cada vez
+        if (objs.Length > 5)//jaja es gracioso porque hay que cambiarlo cada vez
         {
             Debug.Log("ff");
             Destroy(this.gameObject);
