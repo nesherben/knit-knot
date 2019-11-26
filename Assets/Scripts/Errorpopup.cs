@@ -7,13 +7,9 @@ public class Errorpopup : MonoBehaviour
 {
     public GameObject error;
 
-    public void sale(Transform canvasparent) {
-        
-        Instantiate(error, new Vector3(0, 0,-200), Quaternion.identity, canvasparent);
+    public void sale() {
 
+        error.GetComponent<Canvas>().enabled = true;
     }
-
-     public void destruir() {
-        Destroy(error);
-    }
+    
 }
