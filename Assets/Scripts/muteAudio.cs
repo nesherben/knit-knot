@@ -8,14 +8,14 @@ public class muteAudio : MonoBehaviour
 {
     public Image cambio;
     public Slider slider;
-    public GameObject boton, sonido;
+    public GameObject boton,sonido;
     public Sprite activo, inactivo;
     AudioSource miaudio;
     public bool muted = false;
-    public float volumen, saved;
+    public float volumen,saved;
 
 
-
+    
     private void Start()
     {
 
@@ -23,12 +23,11 @@ public class muteAudio : MonoBehaviour
         miaudio = sonido.GetComponent<AudioSource>();
         cambio = boton.GetComponent<Image>();
         miaudio.volume = saved;
-
-
+        
+        
     }
 
-    public void muteado()
-    {
+    public void muteado() {
 
         if (!muted)
         {
@@ -36,7 +35,7 @@ public class muteAudio : MonoBehaviour
             miaudio.volume = slider.value;
             muted = true;
             cambio.sprite = activo;
-
+            
         }
         else
         {
@@ -52,4 +51,9 @@ public class muteAudio : MonoBehaviour
         miaudio.volume = slider.value;
         saved = slider.value;
     }
+    
+
+
 }
+             
+       
