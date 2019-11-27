@@ -67,14 +67,13 @@
     <Compile Include="Assets\Scripts\bienvenidoload.cs" />
     <Compile Include="Assets\Scripts\changeMaterial.cs" />
     <Compile Include="Assets\Scripts\changeRopa.cs" />
-    <Compile Include="Assets\Scripts\collider.cs" />
     <Compile Include="Assets\Scripts\Errorpopup.cs" />
     <Compile Include="Assets\Scripts\Linerender.cs" />
     <Compile Include="Assets\Scripts\muteAudio.cs" />
+    <Compile Include="Assets\Scripts\mycollider.cs" />
     <Compile Include="Assets\Scripts\pantallaCorrecta.cs" />
     <Compile Include="Assets\Scripts\particulasmouse.cs" />
     <Compile Include="Assets\Scripts\persistencia.cs" />
-    <Compile Include="Assets\Scripts\PuntosControl.cs" />
     <Compile Include="Assets\Scripts\Rotation.cs" />
     <Compile Include="Assets\Scripts\scenemanager.cs" />
     <Compile Include="Assets\Scripts\spriter.cs" />

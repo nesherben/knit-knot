@@ -6,7 +6,7 @@ public class Linerender : MonoBehaviour
 {
     private LineRenderer line;
     private bool isMousePressed;
-    public List<Vector3> pointsList;
+    public static List<Vector3> pointsList;
     private Vector3 mousePos;
     public GameObject[] cubos;
     BoxCollider[] limites;
@@ -51,6 +51,9 @@ public class Linerender : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0))
         {
+
+            mycollider.checkpass = 0;
+            mycollider.wallcoll = 0;
             isMousePressed = false;
         }
         // Drawing line when mouse is moving(presses)
@@ -77,7 +80,7 @@ public class Linerender : MonoBehaviour
     //    -----------------------------------    
     //  Following method checks is currentLine(line drawn by last two points) collided with line 
     //    -----------------------------------    
-    bool isLineCollide()
+    public static bool isLineCollide()
     {
         if (pointsList.Count < 2)
             return false;
@@ -105,17 +108,18 @@ public class Linerender : MonoBehaviour
         }
         return false;
     }
+        
     //    -----------------------------------    
     //    Following method checks whether given two points are same or not
     //    -----------------------------------    
-    private bool checkPoints(Vector3 pointA, Vector3 pointB)
+    private static bool checkPoints(Vector3 pointA, Vector3 pointB)
     {
         return (pointA.x == pointB.x && pointA.y == pointB.y);
     }
     //    -----------------------------------    
     //    Following method checks whether given two line intersect or not
     //    -----------------------------------    
-    private bool isLinesIntersect(myLine L1, myLine L2)
+    private static bool isLinesIntersect(myLine L1, myLine L2)
     {
         if (checkPoints(L1.StartPoint, L2.StartPoint) ||
             checkPoints(L1.StartPoint, L2.EndPoint) ||

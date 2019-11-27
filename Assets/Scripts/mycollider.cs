@@ -2,20 +2,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class collider : MonoBehaviour
+public class mycollider : MonoBehaviour
 {
 
     public GameObject gameobject;
-    public GameObject[] pared,checkpoint;
+    public GameObject[] pared;
+    public GameObject[] cp;
+    public static int checkpass,wallcoll;
     Transform posicion;
     Vector3 mousePosition;
     bool isMousePressed = false;
     private void Start()
     {
         posicion = gameobject.GetComponent<Transform>();
-        
-        
+        checkpass = 0;
+        wallcoll = 0;
     }
 
     // Start is called before the first frame update
@@ -32,7 +35,8 @@ public class collider : MonoBehaviour
             if (Input.GetMouseButtonUp(0)) {
             isMousePressed = false;
         }
-        
+        Debug.Log(checkpass);
+        finaljuego();
         mousePosition = Input.mousePosition;
         mousePosition.z = 90;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
@@ -46,18 +50,24 @@ public class collider : MonoBehaviour
             for (int i = 0; i < pared.Length; i++)
                 {
                     pared[i].GetComponentInChildren<Renderer>().material.SetColor("_Color", Color.red);
-                    Debug.Log("cubo choca");
+                    
+                wallcoll++;
                 }
             }
+
         
-            for (int x = 0; x < checkpoint.Length; x++)
-            {
-                if (isMousePressed && collision.tag == "control") //hay que arreglar, que detecta todas y no puede ser
+            if (isMousePressed && collision.tag == "control") //hay que arreglar, que detecta todas y no puede ser
                 {
-                    checkpoint[x].name.ToString();
-                    Debug.Log(checkpoint[x].name.ToString());
+                for (int x = 0; x < cp.Length; x++)
+                {
+                
+                    if (collision.name.Equals(cp[x].name)) {
+                        
+                        checkpass++;
+                    }
                 }
-            }
+                }
+            
     }   
     private void OnTriggerExit(Collider collision)
     {
@@ -67,8 +77,56 @@ public class collider : MonoBehaviour
             for (int i = 0; i < pared.Length; i++)
                 {
                     pared[i].GetComponentInChildren<Renderer>().material.SetColor("_Color", Color.black);
-                    Debug.Log("cubo no choca");
+                    
+                wallcoll++;
                 }
             }
     }
+
+    public void finaljuego() {
+
+        if (checkpass == 6 && Linerender.isLineCollide()) {
+
+            calculoPuntos();
+
+        }
+
+
+    }
+    void calculoPuntos() {
+
+        float total = 0;
+        total = (checkpass * 100/6)-(wallcoll*10/6);
+
+        if (total > 90) {
+            Debug.Log("perfecto");
+        }
+        if (total > 40 && total < 90) {
+            Debug.Log("2 estrellas");
+        }
+        if (total < 40) {
+            Debug.Log("fatal");
+        }
+        transicion();
+    }
+
+    void transicion() {
+        float x = 0;
+        Debug.Log(x);
+
+        while (x < 9000) {
+
+            x++;
+
+        }
+
+
+
+        if (x > 6000) {
+
+            SceneManager.LoadScene("MENU");
+        }
+
+    }
+
 }
