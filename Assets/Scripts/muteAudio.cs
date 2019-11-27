@@ -30,17 +30,17 @@ public class muteAudio : MonoBehaviour
 
         if (!muted)
         {
+            cambio.sprite = activo;
             slider.value = 0;
             miaudio.volume = slider.value;
             muted = true;
-            cambio.sprite = activo;
             
         }
         else
         {
             cambio.sprite = inactivo;
             slider.value = saved;
-            miaudio.volume = saved;
+            miaudio.volume = slider.value;
             muted = false;
             
         }
@@ -49,7 +49,7 @@ public class muteAudio : MonoBehaviour
     public void setvolume()
     {
         miaudio.volume = slider.value;
-        saved = slider.value;
+        //saved = slider.value;
     }
     
 
