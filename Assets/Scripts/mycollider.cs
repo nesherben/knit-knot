@@ -7,12 +7,16 @@ using UnityEngine.SceneManagement;
 public class mycollider : MonoBehaviour
 {
 
+    [SerializeField] public string escenaSiguiente;
     public GameObject gameobject;
+    public GameObject prefab;
     public GameObject[] pared;
-    public GameObject[] cp;
+    [SerializeField]public GameObject[] cp;
     public static int checkpass,wallcoll;
     Transform posicion;
+    bool cierre = false;
     Vector3 mousePosition;
+    public static float total = 0;
     bool isMousePressed = false;
     private void Start()
     {
@@ -29,19 +33,33 @@ public class mycollider : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             isMousePressed = true;
+            
+                Instantiate(prefab, mousePosition, Quaternion.identity);
+            
         }
          
         //esto es solo para PC
             if (Input.GetMouseButtonUp(0)) {
+            
             isMousePressed = false;
+            }
+
+        if (!isMousePressed) {
+            for (int i = 0; i < cp.Length; i++)
+            {
+                Destroy(GameObject.FindWithTag("comienzo"));
+                cp[i].GetComponentInChildren<SphereCollider>().enabled = true;
+                cierre = false;
+            }
         }
-        Debug.Log(checkpass);
+        Debug.Log(cierre);
         finaljuego();
         mousePosition = Input.mousePosition;
         mousePosition.z = 90;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         posicion.position = mousePosition;
     }
+    
     private void OnTriggerEnter(Collider collision)
     {
         
@@ -56,18 +74,24 @@ public class mycollider : MonoBehaviour
             }
 
         
-            if (isMousePressed && collision.tag == "control") //hay que arreglar, que detecta todas y no puede ser
+            if (isMousePressed && collision.tag == "control") 
                 {
                 for (int x = 0; x < cp.Length; x++)
                 {
                 
                     if (collision.name.Equals(cp[x].name)) {
-                        
+                        cp[x].GetComponentInChildren<SphereCollider>().enabled = false;
                         checkpass++;
                     }
                 }
-                }
-            
+            }
+            if (isMousePressed && collision.tag == "comienzo") {
+
+            Debug.Log("se acabo no mas");
+                cierre = true;
+            }
+
+
     }   
     private void OnTriggerExit(Collider collision)
     {
@@ -81,11 +105,17 @@ public class mycollider : MonoBehaviour
                 wallcoll++;
                 }
             }
+        if (isMousePressed && collision.tag == "comienzo")
+        {
+
+            Debug.Log("salida del inicio");
+            cierre = false;
+        }
     }
 
     public void finaljuego() {
 
-        if (checkpass == 6 && Linerender.isLineCollide()) {
+        if (cierre && checkpass == cp.Length && Linerender.isLineCollide()) {
 
             calculoPuntos();
 
@@ -95,42 +125,26 @@ public class mycollider : MonoBehaviour
     }
     void calculoPuntos() {
 
-        float total = 0;
-        total = (checkpass * 100/6)-(wallcoll*10/6);
+        
+        total = (checkpass * 100/6)-(wallcoll*20/3);
 
         if (total > 90) {
             Debug.Log("perfecto");
         }
-        else if (total > 60 && total < 90) {
+        if (total > 40 && total < 90) {
             Debug.Log("2 estrellas");
         }
-        else if (total > 50 && total < 60) {
+        if (total > 10 && total < 40) {
             Debug.Log("1 estrella");
         }
-        else
-        {
-            Debug.Log("Fallado.");
+        if (total < 10) {
+            Debug.Log("fatal");
         }
         transicion();
     }
 
     void transicion() {
-        float x = 0;
-        Debug.Log(x);
-
-        while (x < 9000) {
-
-            x++;
-
-        }
-
-
-
-        if (x > 6000) {
-
-            SceneManager.LoadScene("MENU");
-        }
-
+            SceneManager.LoadScene(escenaSiguiente);
     }
 
 }

@@ -914,7 +914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.79134786, y: 0.9033321}
   m_AnchorMax: {x: 0.93469566, y: 0.98644406}
-  m_AnchoredPosition: {x: 0.00036621094, y: 0.00039672852}
+  m_AnchoredPosition: {x: 0.00036621094, y: 0.0004272461}
   m_SizeDelta: {x: 15.270988, y: 13.889999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101893417
@@ -1038,7 +1038,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1230954401}
   - component: {fileID: 1230954404}
-  - component: {fileID: 1230954403}
   - component: {fileID: 1230954402}
   m_Layer: 5
   m_Name: Estrella1
@@ -1046,7 +1045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1230954401
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1094,19 +1093,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1230954403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230954400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5827c01aa22e243b3835c52ad40017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: -30
 --- !u!222 &1230954404
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1205,7 +1191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1868586326
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1271,7 +1257,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1916715167}
   - component: {fileID: 1916715170}
-  - component: {fileID: 1916715169}
   - component: {fileID: 1916715168}
   m_Layer: 5
   m_Name: Estrella3
@@ -1279,7 +1264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1916715167
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1327,19 +1312,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1916715169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916715166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5827c01aa22e243b3835c52ad40017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: -30
 --- !u!222 &1916715170
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1441,7 +1413,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1963144217}
   - component: {fileID: 1963144220}
-  - component: {fileID: 1963144219}
   - component: {fileID: 1963144218}
   m_Layer: 5
   m_Name: Estrella2
@@ -1449,7 +1420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1963144217
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1497,19 +1468,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1963144219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963144216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5827c01aa22e243b3835c52ad40017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: -30
 --- !u!222 &1963144220
 CanvasRenderer:
   m_ObjectHideFlags: 0
