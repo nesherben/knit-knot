@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/TUTORIAL PATRONAJE.unity
     guid: cc90160c69c354648b7462d3d9632a04
   - enabled: 1
-    path: Assets/Scenes/MINIJUEGO.unity
+    path: Assets/Scenes/MINIJUEGO_CAMISETA_DELANTE.unity
     guid: 8b15a10031de7c84cb8038d5b65c9392
   m_configObjects: {}
