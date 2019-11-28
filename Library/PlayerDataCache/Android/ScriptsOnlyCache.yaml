@@ -35,7 +35,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Slider
-    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/AJUSTES.unity:
     - Class: 1
@@ -358,8 +357,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9678}
     - Class: 114
-      Script: {instanceID: 9846}
-    - Class: 114
       Script: {instanceID: 9886}
     - Class: 114
       Script: {instanceID: 9942}
@@ -375,15 +372,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11148}
     - Class: 114
       Script: {instanceID: 11522}
-    - Class: 114
-      Script: {instanceID: 11596}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -764,7 +759,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: ee2e686dac4bff702ba281262dcc7c6d
+      Hash: 6e66014de824d0fd38758c2e66944625
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Linerender

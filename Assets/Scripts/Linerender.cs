@@ -8,6 +8,7 @@ public class Linerender : MonoBehaviour
     private bool isMousePressed;
     public static List<Vector3> pointsList;
     private Vector3 mousePos;
+    [SerializeField]public mycollider[] cp;
     public GameObject[] cubos;
     BoxCollider[] limites;
 
@@ -54,6 +55,7 @@ public class Linerender : MonoBehaviour
 
             mycollider.checkpass = 0;
             mycollider.wallcoll = 0;
+            
             isMousePressed = false;
         }
         // Drawing line when mouse is moving(presses)
