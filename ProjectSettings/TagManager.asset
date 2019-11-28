@@ -8,6 +8,7 @@ TagManager:
   - persistencia
   - limite
   - control
+  - comienzo
   layers:
   - Default
   - TransparentFX

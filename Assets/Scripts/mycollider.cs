@@ -101,11 +101,15 @@ public class mycollider : MonoBehaviour
         if (total > 90) {
             Debug.Log("perfecto");
         }
-        if (total > 40 && total < 90) {
+        else if (total > 60 && total < 90) {
             Debug.Log("2 estrellas");
         }
-        if (total < 40) {
-            Debug.Log("fatal");
+        else if (total > 50 && total < 60) {
+            Debug.Log("1 estrella");
+        }
+        else
+        {
+            Debug.Log("Fallado.");
         }
         transicion();
     }
