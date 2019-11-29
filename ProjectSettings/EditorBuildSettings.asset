@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MINIJUEGO_CAMISETA_DELANTE.unity
     guid: 8b15a10031de7c84cb8038d5b65c9392
+  - enabled: 1
+    path: Assets/Scenes/MINIJUEGO_CAMISETA_MANGA.unity
+    guid: b60399105cbbf1b499e5dee148447397
+  - enabled: 1
+    path: Assets/Scenes/MINIJUEGO_CAMISETA_DETRAS.unity
+    guid: 1248201767c7775499aa42a499e9d1cd
+  - enabled: 1
+    path: Assets/Scenes/RESULTADOS.unity
+    guid: 56670500908e62f45af82b66dcecdcbb
   m_configObjects: {}

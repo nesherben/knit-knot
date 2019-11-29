@@ -72,7 +72,7 @@ public class Linerender : MonoBehaviour
                 line.SetPosition(pointsList.Count - 1, (Vector3)pointsList[pointsList.Count - 1]);
                 if (isLineCollide())
                 {
-                    isMousePressed = false;
+                    //isMousePressed = false;
                     line.startColor = Color.red;
                     line.endColor = Color.red;
                 }

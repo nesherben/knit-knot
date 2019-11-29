@@ -10,13 +10,14 @@ public class mycollider : MonoBehaviour
     [SerializeField] public string escenaSiguiente;
     public GameObject gameobject;
     public GameObject prefab;
+    public GameObject micanvas;
     public GameObject[] pared;
     [SerializeField]public GameObject[] cp;
     public static int checkpass,wallcoll;
     Transform posicion;
+    int faketouch = 0;
     bool cierre = false;
     Vector3 mousePosition;
-    public static float total = 0;
     bool isMousePressed = false;
     private void Start()
     {
@@ -33,25 +34,34 @@ public class mycollider : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             isMousePressed = true;
-            
-                Instantiate(prefab, mousePosition, Quaternion.identity);
-            
+
         }
          
-        //esto es solo para PC
+        //esto es solo para PC//
             if (Input.GetMouseButtonUp(0)) {
             
             isMousePressed = false;
             }
+        /////////////////////////
+        if (!isMousePressed)
+        {
+            faketouch = 0;
+            //Destroy(GameObject.FindWithTag("comienzo"));
 
-        if (!isMousePressed) {
             for (int i = 0; i < cp.Length; i++)
             {
-                Destroy(GameObject.FindWithTag("comienzo"));
                 cp[i].GetComponentInChildren<SphereCollider>().enabled = true;
                 cierre = false;
             }
         }
+        if(faketouch<2 && isMousePressed) {
+            //te partes de risa con esto, es para que en android vaya bien xd
+
+            Instantiate(prefab, mousePosition, Quaternion.identity).transform.parent = micanvas.transform;
+            faketouch++;
+        }
+
+
         Debug.Log(cierre);
         finaljuego();
         mousePosition = Input.mousePosition;
@@ -116,33 +126,14 @@ public class mycollider : MonoBehaviour
     public void finaljuego() {
 
         if (cierre && checkpass == cp.Length && Linerender.isLineCollide()) {
-
-            calculoPuntos();
-
+            Debug.Log("Aqui se choca bien loko");
+            puntuacion.calculoPuntos();
+            transicion();
         }
 
 
     }
-    void calculoPuntos() {
-
-        
-        total = (checkpass * 100/6)-(wallcoll*20/3);
-
-        if (total > 90) {
-            Debug.Log("perfecto");
-        }
-        if (total > 40 && total < 90) {
-            Debug.Log("2 estrellas");
-        }
-        if (total > 10 && total < 40) {
-            Debug.Log("1 estrella");
-        }
-        if (total < 10) {
-            Debug.Log("fatal");
-        }
-        transicion();
-    }
-
+    
     void transicion() {
             SceneManager.LoadScene(escenaSiguiente);
     }
