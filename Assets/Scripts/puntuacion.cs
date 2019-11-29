@@ -6,13 +6,20 @@ using UnityEngine.SceneManagement;
 public class puntuacion : MonoBehaviour
 {
 
-    public static float total = 0;
+    public float total;
     public GameObject gestion;
     bool done = false;
     public GameObject[] estrellitas;
     public GameObject[] textos;
 
     static float save1, save2;
+    private void Start()
+    {
+        total = 0;
+        save1 = 0;
+        save2 = 0;
+    }
+
     private void Update()
     {
         Debug.Log(total);
@@ -26,6 +33,7 @@ public class puntuacion : MonoBehaviour
                 done = true;
                 mostrarScore();
         }
+        if (SceneManager.GetActiveScene().name == "MENU") Destroy(gestion);
         
     }
    
@@ -33,10 +41,11 @@ public class puntuacion : MonoBehaviour
 
     {
         save1 += mycollider.checkpass * 100 / 6;
-        save2 += mycollider.wallcoll * 23f / 3f;
-        total = save1 - save2;
+        save2 += mycollider.wallcoll * 24.16f / 2.78f;
+        
     }
     public void mostrarScore() {
+        total = save1 - save2;
         gestion.GetComponentInChildren<Canvas>().enabled = true;
         total = total/3f;
         if (total > 90) {
@@ -46,23 +55,22 @@ public class puntuacion : MonoBehaviour
             estrellitas[2].SetActive(true);
             textos[3].SetActive(true);
         }
-        if (total > 45 && total < 90) {
+        if (total > 50 && total < 90) {
             Debug.Log("2 estrellas");
             estrellitas[0].SetActive(true);
             estrellitas[1].SetActive(true);
             textos[2].SetActive(true);
         }
-        if (total > 0 && total< 45) {
+        if (total > 10 && total< 50) {
             Debug.Log("1 estrella");
             estrellitas[0].SetActive(true);
             textos[1].SetActive(true);
 
         }
-        if (total< 0) {
+        if (total< 10) {
             Debug.Log("fatal");
             textos[0].SetActive(true);
         }
-        
     }
 
 
