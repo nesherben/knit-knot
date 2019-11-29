@@ -1225,4 +1225,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MINIJUEGO_CAMISETA_MANGA.unity
   - Assets/Scenes/MINIJUEGO_CAMISETA_DETRAS.unity
   - Assets/Scenes/RESULTADOS.unity
-  playerPath: D:/Desktop/KnitKnot.apk
+  playerPath: C:/Unity_Proyects/KnitKnot.apk

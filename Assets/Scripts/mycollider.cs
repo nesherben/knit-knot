@@ -46,7 +46,7 @@ public class mycollider : MonoBehaviour
         if (!isMousePressed)
         {
             faketouch = 0;
-            //Destroy(GameObject.FindWithTag("comienzo"));
+            Destroy(GameObject.FindWithTag("comienzo"));
 
             for (int i = 0; i < cp.Length; i++)
             {
@@ -125,7 +125,7 @@ public class mycollider : MonoBehaviour
 
     public void finaljuego() {
 
-        if (cierre && checkpass == cp.Length && Linerender.isLineCollide()) {
+        if (cierre && checkpass == cp.Length) {
             Debug.Log("Aqui se choca bien loko");
             puntuacion.calculoPuntos();
             transicion();
