@@ -56,9 +56,11 @@ public class mycollider : MonoBehaviour
         }
         if(faketouch<2 && isMousePressed) {
             //te partes de risa con esto, es para que en android vaya bien xd
-
+            Destroy(GameObject.FindWithTag("comienzo"));
+            
             Instantiate(prefab, mousePosition, Quaternion.identity).transform.parent = micanvas.transform;
             faketouch++;
+           
         }
 
 
